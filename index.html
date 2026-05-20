@@ -1,13 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>invitation-site</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Invitation</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f9b0f, #00c853);
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.25);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      background-color: aliceblue;
+      border: 3px solid white;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      flex: 1;
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 12px;
+    }
+
+    button {
+      background: white;
+      color: #0f9b0f;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <!-- LOGO -->
+    <img class="logo" src="logo.png" alt="Logo">
+
+    <h1>Grand Event</h1>
+    <p>You are invited to a special headoffice opening celebration event in summit 72, Addis Ababa</p>
+
+    <div class="">
+      <div class="box">
+        <h3>Date</h3>
+        <p>June 15, 2026</p>
+      </div>
+
+      <div class="box">
+        <h3>Time</h3>
+        <p>6:00 PM</p>
+      </div>
+
+      <div class="box">
+        <h3>Location</h3>
+        <p>Addis Ababa</p>
+      </div>
+    </div>
+
+    <button>Location </button>
+
+  </div>
+
+</body>
 </html>
